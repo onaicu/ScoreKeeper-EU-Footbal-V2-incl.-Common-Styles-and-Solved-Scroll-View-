@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_ParentLinear"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/width_ChildLinearA"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TeamStyleTxtView"
+                    android:fontFamily="Arial"
+                    android:text="@string/Team_A" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/ScoreResultStyle"
+                    android:fontFamily="Arial"
+                    android:text="@string/int_scoreTeamA" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneGoalForTeamA"
+                    android:text="@string/addOneGoalForA" />
+
+                <TextView
+                    android:id="@+id/team_a_scoreAgainst"
+                    style="@style/ScoreResultStyle"
+                    android:fontFamily="Arial"
+                    android:text="@string/int_team_a_scoreAgainst" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneGoalAgainstTeamA"
+                    android:text="@string/addOneGoalAgainstA" />
+
+                <TextView
+                    android:id="@+id/team_a_scoreFoul"
+                    style="@style/ScoreResultStyle"
+                    android:fontFamily="Arial"
+                    android:text="@string/int_team_a_scoreFoul" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneFoulForTeamA"
+                    android:text="@string/addOneFoulForTeamA" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="@dimen/width_ChildLinearB"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TeamStyleTxtView"
+                    android:fontFamily="Arial"
+                    android:text="@string/Team_B" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/ScoreResultStyle"
+                    android:fontFamily="Arial"
+                    android:text="@string/int_scoreTeamB" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneForTeamB"
+                    android:text="@string/addOneGoalForB" />
+
+                <TextView
+                    android:id="@+id/team_b_scoreAgainst"
+                    style="@style/ScoreResultStyle"
+                    android:fontFamily="Arial"
+                    android:text="@string/int_team_b_scoreAgainst" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneGoalAgainstB"
+                    android:text="@string/addOneGoalAgainstB" />
+
+                <TextView
+                    android:id="@+id/team_b_scoreFoul"
+                    style="@style/ScoreResultStyle"
+                    android:fontFamily="Arial"
+                    android:text="@string/int_team_b_scoreFoul" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneFoulForTeamB"
+                    android:text="@string/addOneFoulForTeamB" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/marginBottomReset"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+    </RelativeLayout>
+</ScrollView>

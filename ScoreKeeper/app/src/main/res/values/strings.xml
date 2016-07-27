@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ScoreKeeper EU Football</string>
+    <string name="Team_A">Team A</string>
+    <string name="int_scoreTeamA">0</string>
+    <string name="addOneGoalForA">+1 Goal For</string>
+    <string name="int_team_a_scoreAgainst">0</string>
+    <string name="addOneGoalAgainstA">+1 Goal Against</string>
+    <string name="int_team_a_scoreFoul">0</string>
+    <string name="addOneFoulForTeamA">+1 Foul</string>
+
+    <string name="Team_B">Team B</string>
+    <string name="int_scoreTeamB">0</string>
+    <string name="addOneGoalForB">+1 Goal For</string>
+    <string name="int_team_b_scoreAgainst">0</string>
+    <string name="addOneGoalAgainstB">+1 Goal Against</string>
+    <string name="int_team_b_scoreFoul">0</string>
+    <string name="addOneFoulForTeamB">+1 Foul</string>
+    <string name="reset">Reset</string>
+</resources>

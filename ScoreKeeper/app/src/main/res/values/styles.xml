@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Primary dark theme color of the app (sets color of status bar) -->
+        <item name="colorPrimaryDark">#FB8C00</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+
+    </style>
+
+    <!-- Style Team A and B. -->
+    <style name="TeamStyleTxtView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorGrey700</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Style Score and Results. -->
+    <style name="ScoreResultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom</item>
+        <item name="android:textSize">56sp</item>
+    </style>
+
+</resources>
